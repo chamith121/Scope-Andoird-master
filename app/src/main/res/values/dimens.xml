@@ -1,0 +1,147 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- layout_food_beverages Layout dimentions -->
+
+    <dimen name="item_name__lay_layout_marginTop">15dp</dimen>
+    <dimen name="item_name_lay_layout_marginBottom">6dp</dimen>
+    <dimen name="item_name_tv_paddingLeft">10dp</dimen>
+
+    <dimen name="item_name_view_height">1dp</dimen>
+    <dimen name="item_name_view_layout_marginLeft">15dp</dimen>
+    <dimen name="item_name_view_layout_marginRight">10dp</dimen>
+    <dimen name="itemNameTv_textSize">17sp</dimen>
+
+    <dimen name="layout_main_layout_marginTop">5dp</dimen>
+    <dimen name="layout_main_layout_marginBottom">5dp</dimen>
+
+    <dimen name="imageItem_width">120dp</dimen>
+    <dimen name="imageItem_height">150dp</dimen>
+    <dimen name="imageItem_padding">15dp</dimen>
+
+    <dimen name="descrip_layout_marginLeft">10dp</dimen>
+    <dimen name="descrip_layout_marginRight">10dp</dimen>
+
+    <dimen name="itemNameTwoTv_textSize">13sp</dimen>
+    <dimen name="itemNameTwoTv_marginLeft">8dp</dimen>
+    <dimen name="itemNameTwoTv_marginTop">8dp</dimen>
+
+    <dimen name="priceTv_textSize">13sp</dimen>
+    <dimen name="priceTv_marginLeft">8dp</dimen>
+    <dimen name="priceTv_marginBottom">10dp</dimen>
+
+    <dimen name="relative_lay_marginTop">12dp</dimen>
+
+    <dimen name="linearLayout_layout_width">110dp</dimen>
+
+    <dimen name="minusButton_textSize">20sp</dimen>
+    <dimen name="minusButton_width">32dp</dimen>
+    <dimen name="minusButton_height">32dp</dimen>
+
+    <dimen name="qty_layout_textSize">12sp</dimen>
+    <dimen name="qty_layout_marginLeft">10dp</dimen>
+    <dimen name="qty_llayout_marginRight">10dp</dimen>
+
+    <dimen name="countQuantityTv_textSize">12sp</dimen>
+    <dimen name="countQuantityTv_marginLeft">10dp</dimen>
+    <dimen name="countQuantityTv_marginRight">10dp</dimen>
+
+    <dimen name="plusButton_textSize">20sp</dimen>
+    <dimen name="plusButton_width">32dp</dimen>
+    <dimen name="plusButton_height">32dp</dimen>
+
+    <dimen name="addBtn_textSize">14sp</dimen>
+    <dimen name="addBtn_layout_marginRight">5dp</dimen>
+    <dimen name="addBtn_width">70dp</dimen>
+    <dimen name="addBtn_height">32dp</dimen>
+
+
+    <!--  SeatPaln Layout dimen  -->
+
+    <dimen name="CoTL_expandedTitleMarginEnd">56dp</dimen>
+    <dimen name="CoTL_expandedTitleMarginStart">40dp</dimen>
+
+    <dimen name="LinearLayout_height">190dp</dimen>
+    <dimen name="LinearLayout_layout_marginTop">50dp</dimen>
+
+    <dimen name="Relative_layout_layout_width">113dp</dimen>
+    <dimen name="Relative_layout_layout_marginLeft">10dp</dimen>
+    <dimen name="Relative_layout_layout_marginTop">4dp</dimen>
+
+    <dimen name="CardView_layout_margin">5dp</dimen>
+    <dimen name="CardView_cardCornerRadius">10dp</dimen>
+
+    <dimen name="movieImageIV_layout_width">113dp</dimen>
+    <dimen name="movieImageIV_layout_height">160dp</dimen>
+
+    <dimen name="textViewTime_layout_height">26dp</dimen>
+    <dimen name="textViewTime_layout_marginLeft_right_bottum">5dp</dimen>
+    <dimen name="textViewTime_textSize">13sp</dimen>
+
+    <dimen name="LinearLayout_descip_marginTop">15dp</dimen>
+
+    <dimen name="movieNameTv_paddingLeft">7dp</dimen>
+    <dimen name="movieNameTv_textSize">20sp</dimen>
+
+    <dimen name="moveGenreTv_paddingLeft">7dp</dimen>
+    <dimen name="moveGenreTv_textSize">14sp</dimen>
+
+    <dimen name="movieShowDate_layout_marginTop">10dp</dimen>
+    <dimen name="movieShowDate_paddingLeft">7dp</dimen>
+
+    <dimen name="blueIv_layout_width">3dp</dimen>
+
+    <dimen name="movieShowDate_layout_marginLeft">10dp</dimen>
+    <dimen name="movieShowDate_textSize">14sp</dimen>
+
+    <dimen name="Toolbar_left_start">0dp</dimen>
+
+    <dimen name="titleTv_layout_height">35dp</dimen>
+    <dimen name="titleTv_llayout_marginRight">65dp</dimen>
+    <dimen name="titleTv_textSize">16sp</dimen>
+
+    <dimen name="HorizontalScrollView_marginTop">10dp</dimen>
+
+    <dimen name="TableSeats_marginLeft">10dp</dimen>
+
+    <dimen name="theaterIV_height">85dp</dimen>
+
+    <dimen name="seatLayout_layout_marginTop">10dp</dimen>
+    <dimen name="seatLayout_marginLeft">25dp</dimen>
+    <dimen name="seatLayout_marginRight">25dp</dimen>
+
+    <dimen name="seatLayoutTwo_width">0dp</dimen>
+
+    <dimen name="seatTv_width_height">30dp</dimen>
+    <dimen name="seatTv_marginLeft_right">10dp</dimen>
+
+    <dimen name="seatTitleTv_marginTop">5dp</dimen>
+    <dimen name="seatTitleTv_TextSize">11sp</dimen>
+
+    <dimen name="view_marginTop">4dp</dimen>
+    <dimen name="view_marginLeft">10dp</dimen>
+    <dimen name="view_marginRight">10dp</dimen>
+    <dimen name="view_height">1dp</dimen>
+
+    <dimen name="totTicCountTv_top">15dp</dimen>
+    <dimen name="totTicCountTv_TextSize">14sp</dimen>
+
+    <dimen name="RecyclerView_marginLeft">30dp</dimen>
+    <dimen name="RecyclerView_marginRight">30dp</dimen>
+
+    <dimen name="confirmBtn_marginTop">30dp</dimen>
+    <dimen name="confirmBtn_marginLeft">60dp</dimen>
+    <dimen name="confirmBtn_layout_marginRight">60dp</dimen>
+    <dimen name="confirmBtn_marginBottom">20dp</dimen>
+    <dimen name="confirmBtn_height">40dp</dimen>
+    <dimen name="confirmBtn_textSize">13sp</dimen>
+
+
+
+</resources>

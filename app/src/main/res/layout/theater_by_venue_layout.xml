@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layoytOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/theaterNameIv"
+        android:layout_width="120dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitStart"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:id="@+id/subTheaterNameTv"
+        android:background="@color/color_black"
+        android:text="ATMOS"
+        android:textColor="@color/color_white"
+        android:fontFamily="@font/opensans_regular"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layoytOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/msgTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/opensans_light"
+            android:gravity="center"
+            android:text="Not available movie show theaters."
+            android:textColor="@color/color_white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:scrollbarSize="0dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#13132d</color>
+    <color name="colorPrimaryDark">#13132d</color>
+    <color name="colorAccent">#576ed8</color>
+
+    <color name="login_Bg_color">#1b1b46</color>
+
+
+    <color name="color_white">#FFFFFF</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="blue_color">#576ed8</color>
+    <color name="blue_color_dark">#3938b7</color>
+    <color name="blue_color_semi_dark">#4252a0</color>
+    <color name="blue_color_semi">#349df9</color>
+    <color name="blue_color_dark_two">#1d1e32</color>
+
+    <color name="color_background_one">#e2e2e2</color>
+    <color name="layout_dark_blue">#1f204e</color>
+
+    <color name="text_color_one">#1c1b45</color>
+    <color name="text_color_two">#787878</color>
+    <color name="text_color_three">#13132d</color>
+    <color name="text_color_four">#3938b7</color>
+    <color name="text_color_five">#878793</color>
+    <color name="text_color_six">#1c1c36</color>
+    <color name="text_color_seven">#787878</color>
+    <color name="text_color_eight">#1d1d39</color>
+    <color name="text_color_nine">#58596b</color>
+    <color name="text_color_ten">#7034c7</color>
+    <color name="text_color_eleven">#483b69</color>
+    <color name="text_color_my_acc_one">#474e5e</color>
+    <color name="text_color_my_acc_two">#959cac</color>
+
+    <color name="color_black">#000000</color>
+
+    <color name="rating_bar_color">#576ed8</color>
+
+    <color name="semi_white_background">#f1f1f1</color>
+
+    <color name="line_color">#dbdaea</color>
+    <color name="line_color_two">#18183e</color>
+    <color name="line_color_three">#1b7399</color>
+    <color name="line_color_four">#ed0b6d</color>
+
+    <color name="tab_indicater_color">#b3b3bf</color>
+
+    <color name="facebook_blue">#3b5998</color>
+
+</resources>

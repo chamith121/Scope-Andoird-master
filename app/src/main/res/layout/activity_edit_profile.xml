@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/edit_root"
+    android:background="@color/colorPrimary"
+    tools:context="lk.archmage.scopecinemas.EditProfile">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            <TextView
+                android:id="@+id/categoryTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/opensans_semibold"
+                android:gravity="center"
+                android:text="EDIT PROFILE"
+                android:textAlignment="center"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                android:layout_marginRight="70dp"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="28dp"
+        android:fillViewport="false"
+        app:layout_constraintBottom_toTopOf="@+id/updateBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp">
+
+            <EditText
+                android:id="@+id/txtFName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/line_color_three"
+                android:fontFamily="@font/opensans_regular"
+                android:hint="Enter Your First Name"
+                android:inputType="text"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/line_color_three"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/txtLName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/line_color_three"
+                android:fontFamily="@font/opensans_regular"
+                android:hint="Enter Your Last Name"
+                android:inputType="text"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/line_color_three"
+                android:textSize="16dp" />
+
+
+
+            <EditText
+                android:id="@+id/txtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/line_color_three"
+                android:fontFamily="@font/opensans_regular"
+                android:hint="Enter Your Mobile ( 07X XXX XXXX )"
+                android:maxLength="15"
+                android:inputType="number"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/line_color_three"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/txtDob"
+                android:editable="false"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/line_color_three"
+                android:fontFamily="@font/opensans_regular"
+                android:hint="Enter Your Date Of Birth"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_white"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/line_color_three"
+                android:fontFamily="@font/opensans_regular"
+                android:hint="Enter Your Address"
+                android:inputType="text"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/line_color_three"
+                android:textSize="16dp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/redioLable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="Gender"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radiofemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/color_white"
+                    android:buttonTint="@color/line_color_three"
+                    android:tag="female"
+                    android:text="Female"
+                    android:textColor="@color/color_white" />
+
+                <RadioButton
+                    android:id="@+id/redioMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/color_white"
+                    android:buttonTint="@color/line_color_three"
+
+                    android:tag="male"
+                    android:text="Male"
+                    android:textColor="@color/color_white" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/login_btn_bg"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Update"
+        android:textColor="@color/color_white"
+        android:textSize="14sp"
+       android:layout_margin="28dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

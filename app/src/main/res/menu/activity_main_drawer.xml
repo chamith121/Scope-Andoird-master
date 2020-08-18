@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/movie"
+            android:title="Movies" />
+        <item
+            android:id="@+id/nav_deals"
+            android:icon="@drawable/deals"
+            android:title="Deals &amp; Exclusive" />
+        <item
+            android:id="@+id/nav_theaters"
+            android:icon="@drawable/compass"
+            android:title="Theaters" />
+        <item
+            android:id="@+id/nav_reservations"
+            android:icon="@drawable/calendar"
+            android:title="Upcoming Reservations" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/user"
+            android:title="My Account" />
+
+        <item
+            android:id="@+id/nav_loyalty"
+            android:icon="@drawable/star"
+            android:title="Join Loyalty Program" />
+    </group>
+
+
+</menu>

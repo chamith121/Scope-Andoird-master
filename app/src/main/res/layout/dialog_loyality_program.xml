@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:id="@+id/closeBtn"
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+        
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_close"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JOIN SCOPE CINEMAS LOYALTY PROGRAM"
+        android:textColor="@color/text_color_ten"
+        android:textSize="17sp"
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_below="@+id/closeBtn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/text_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Mobile Number"
+        android:fontFamily="@font/opensans_semibold"
+        android:textSize="14sp"
+        android:textColor="@color/text_color_nine"
+        android:layout_below="@+id/titleTv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/contactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="076 996 3435"
+        android:textColor="@color/text_color_eleven"
+        android:textSize="16sp"
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_below="@+id/text_one"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/text_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please confirm your details below"
+        android:fontFamily="@font/opensans_semibold"
+        android:textSize="14sp"
+        android:textColor="@color/text_color_eight"
+        android:layout_below="@+id/contactNumber"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    
+    <EditText
+        android:inputType="text"
+        android:id="@+id/firstNameTv"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_two"
+        android:background="@color/transparent"
+        android:textSize="15sp"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@color/text_color_three"
+        android:text="Nirosha"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/firstNameTv"
+        android:id="@+id/line_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2.8"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line_color_three" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="1dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_color_four" />
+
+    </LinearLayout>
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/lastNameTv"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_one"
+        android:background="@color/transparent"
+        android:textSize="15sp"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@color/text_color_three"
+        android:text="Kodithuwakku"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/lastNameTv"
+        android:id="@+id/line_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2.8"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line_color_three" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="1dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_color_four" />
+
+    </LinearLayout>
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailET"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_two"
+        android:background="@color/transparent"
+        android:textSize="15sp"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@color/text_color_three"
+        android:text="nirosha@archmage.lk"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/emailET"
+        android:id="@+id/line_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2.8"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line_color_three" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="1dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_color_four" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/line_three"
+        android:id="@+id/layourDate"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight=".3"
+            android:padding="5dp"
+            android:src="@drawable/calendar_two" />
+
+        <TextView
+            android:text="2019/07/05"
+            android:id="@+id/setEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_three"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensans_regular"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/chooseEndDate"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight=".2"
+            android:scaleType="fitEnd"
+            android:padding="8dp"
+            android:src="@drawable/expand_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/layourDate"
+        android:id="@+id/line_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2.8"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line_color_three" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="1dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_color_four" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/line_four"
+        android:id="@+id/genderLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/routineNameSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:visibility="visible"
+            android:spinnerMode="dialog"
+            android:theme="@style/AppTheme.PopupOverlay"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/genderLayout"
+        android:id="@+id/line_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2.8"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line_color_three" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="1dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_color_four" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/agreeLayout"
+        android:layout_below="@+id/line_five"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:buttonTint="#000000"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="By using this number, you agree to the terms and conditions of the Scope Cinemas loyalty program."
+            android:textColor="@color/color_black"
+            android:fontFamily="@font/opensans_light"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/agreeLayout"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/confirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_button_proceed"
+            android:fontFamily="@font/opensans_bold"
+            android:text="CONFIRM &amp; JOIN"
+            android:textColor="@color/color_white"
+            android:textSize="15sp">
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

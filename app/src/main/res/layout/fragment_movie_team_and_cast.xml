@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieTeamAndCast">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_semibold"
+                android:paddingLeft="10dp"
+                android:text="TEAM"
+                android:textColor="@color/text_color_four"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/linear_layout"
+                android:background="@color/line_color"
+                android:layerType="software" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:text="DirectedBy"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="14sp"
+                    android:gravity="center|left"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight=".1"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/directerNameTv"
+                    android:gravity="center|left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:text="ProducedBy"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="14sp"
+                    android:gravity="center|left"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight=".1"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/producedNameTv"
+                    android:gravity="center|left"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:text="WrittenBy"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="14sp"
+                    android:gravity="center|left"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight=".1"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/writtenNameTv"
+                    android:gravity="center|left"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:text="MusicBy"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="14sp"
+                    android:gravity="center|left"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight=".1"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/musicNameTv"
+                    android:gravity="center|left"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_eight"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_semibold"
+                android:paddingLeft="10dp"
+                android:text="CAST"
+                android:textColor="@color/text_color_four"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/linear_layout"
+                android:background="@color/line_color"
+                android:layerType="software" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/msgTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/opensans_light"
+                android:gravity="center"
+                android:text="Not available Casting Data."
+                android:textColor="@color/blue_color_semi_dark"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:layout_marginLeft="10dp"
+                android:divider="#00000000"
+                android:id="@+id/castListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

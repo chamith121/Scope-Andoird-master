@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_name__lay_layout_marginTop"
+        android:layout_marginBottom="@dimen/item_name_lay_layout_marginBottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/itemNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:paddingLeft="@dimen/item_name_tv_paddingLeft"
+            android:text="ICE TEA"
+            android:textColor="@color/text_color_four"
+            android:textSize="@dimen/itemNameTv_textSize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_name_view_height"
+            android:layout_below="@+id/linear_layout"
+            android:layout_marginLeft="@dimen/item_name_view_layout_marginLeft"
+            android:layout_marginRight="@dimen/item_name_view_layout_marginRight"
+            android:background="@color/line_color"
+            android:layerType="software" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_main_layout_marginTop"
+        android:layout_marginBottom="@dimen/layout_main_layout_marginBottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="@drawable/no_image_food"
+            android:id="@+id/imageItem"
+            android:layout_width="@dimen/imageItem_width"
+            android:layout_height="@dimen/imageItem_height"
+            android:padding="@dimen/imageItem_padding"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fanta" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/descrip_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/descrip_layout_marginRight"
+                android:background="@drawable/rounded_corner_layout_bev"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemNameTwoTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/itemNameTwoTv_marginLeft"
+                    android:layout_marginTop="@dimen/item_name_view_layout_marginRight"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Ice Tea 240 ml"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/itemNameTv_textSize" />
+
+                <TextView
+                    android:id="@+id/priceTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/priceTv_marginLeft"
+                    android:layout_marginBottom="@dimen/priceTv_marginBottom"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Rs. 175"
+                    android:textColor="@color/text_color_one"
+                    android:textSize="@dimen/priceTv_textSize" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/relative_lay_marginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/linearLayout_layout_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/minusButton"
+                        android:layout_width="@dimen/minusButton_width"
+                        android:layout_height="@dimen/minusButton_height"
+                        android:background="@drawable/rounded_corner_seat_plan_button"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="-"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/minusButton_textSize" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/qty_layout_marginLeft"
+                            android:layout_marginRight="@dimen/qty_llayout_marginRight"
+                            android:fontFamily="@font/opensans_regular"
+                            android:gravity="center"
+                            android:text="Qty"
+                            android:textColor="@color/text_color_three"
+                            android:textSize="@dimen/qty_layout_textSize" />
+
+                        <TextView
+                            android:id="@+id/countQuantityTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/countQuantityTv_marginLeft"
+                            android:layout_marginRight="@dimen/countQuantityTv_marginRight"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="0"
+                            android:textColor="@color/text_color_three"
+                            android:textSize="@dimen/countQuantityTv_textSize" />
+
+                    </LinearLayout>
+
+
+
+                    <Button
+                        android:id="@+id/plusButton"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/rounded_corner_seat_plan_button"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="+"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/plusButton_textSize" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/addBtn"
+                    android:layout_marginRight="@dimen/addBtn_layout_marginRight"
+                    android:layout_width="@dimen/addBtn_width"
+                    android:layout_height="@dimen/addBtn_height"
+                    android:text="ADD"
+                    android:textSize="@dimen/addBtn_textSize"
+                    android:textColor="@color/color_white"
+                    android:background="@drawable/btn_button_add"/>
+
+            </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

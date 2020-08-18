@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainScrollerPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:id="@+id/movieNameTv"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/detailsLayoutTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Charilies Angels"
+            android:textColor="@color/color_white"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/detailsLayoutTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/detailsLayout"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:id="@+id/moveGenreTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="Action ~ 2h 39m"
+                android:textColor="@color/text_color_nine"
+                android:textSize="14sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/movieTimeTv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/opensans_semibold"-->
+<!--                android:text="~ 2h 39m"-->
+<!--                android:textColor="@color/text_color_nine"-->
+<!--                android:textSize="14sp" />-->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/detailsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buyTicketsBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:foregroundGravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/imdbTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:gravity="center"
+                    android:text="7.0"
+                    android:textColor="@color/color_white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:text="IMDB"
+                    android:textColor="@color/text_color_nine"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/youTubeLinkLayout"
+                android:gravity="center_horizontal"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/you_tube_icon"
+                    android:padding="4dp"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:text="Watch Trailer"
+                    android:textColor="@color/text_color_nine"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/moreDetailsLayout"
+                android:gravity="center_horizontal"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:padding="8dp"
+                    android:src="@drawable/dot_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:text="More details"
+                    android:textColor="@color/text_color_nine"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/buyTicketsBtn"
+            android:layout_width="155dp"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_button_buy_tickets"
+            android:fontFamily="@font/opensans_bold"
+            android:text="BUY TICKETS"
+            android:textColor="@color/color_white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

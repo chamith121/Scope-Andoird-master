@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="lk.archmage.scopecinemas.MyLoyalty">
+
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="18dp"
+        android:background="@null"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/lin_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/closeBtn">
+
+
+        <TextView
+            android:id="@+id/lbl_membership_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:text="Membership ID"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_membership_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/text_color_ten"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/lbl_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:text="Available Balance"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/text_color_ten"
+            android:textSize="56sp" />
+
+        <TextView
+            android:id="@+id/lbl_totalEarned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:text="Total Earned"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_totalEarned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/text_color_ten"
+            android:textSize="56sp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

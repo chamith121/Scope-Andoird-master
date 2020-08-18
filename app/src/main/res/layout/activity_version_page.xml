@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/login_Bg_color"
+    tools:context=".VersionPage">
+
+<!--    android:background="@drawable/login_bg"-->
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:src="@drawable/scope_cinemas_logo"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/messageTv"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/messageTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message_new_version_one"
+        android:textSize="20sp"
+        android:fontFamily="@font/opensans_semibold"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/messageTv"
+        android:id="@+id/messageTvTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message_new_version_two"
+        android:textSize="15sp"
+        android:fontFamily="@font/opensans_light"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/messageTvTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:text="Download"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_button_proceed"
+        android:textColor="@color/color_white"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

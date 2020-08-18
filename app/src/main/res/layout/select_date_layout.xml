@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="52dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_corner_layout_for_select_date_movie"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:id="@+id/layoutBtn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/monthNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:text="NOV"
+            android:textColor="@color/text_color_one"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/dayTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:text="18"
+            android:textColor="@color/text_color_one"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dayNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:text="MON"
+            android:textColor="@color/text_color_one"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

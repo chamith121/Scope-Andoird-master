@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBarCollectCard"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:background="#e9e9e9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@drawable/movie_theater_toolbar_color"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/scope_cinemas_logo" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:background="#efefef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are processing your payment"
+                android:textColor="@color/text_color_two"
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="14sp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please wait. Do not click on the"
+                android:textColor="@color/text_color_two"
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="14sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/progress_message"
+                android:textColor="@color/text_color_two"
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+
+            <pl.droidsonroids.gif.GifTextView
+                android:layout_gravity="center"
+                android:layout_width="245dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/progree_gig1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/rounded_corner_layout_for_processing_card_info"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/contact"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color_two"
+                    android:textSize="15sp"
+                    android:text="Call us on our help line"
+                    android:fontFamily="@font/opensans_semibold" />
+
+                <TextView
+                    android:paddingTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color_two"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="070 33 87 602"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/rounded_corner_layout_for_processing_card_info"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:paddingLeft="25dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color_two"
+                    android:textSize="15sp"
+                    android:text="Email Us"
+                    android:fontFamily="@font/opensans_semibold" />
+
+                <TextView
+                    android:paddingTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color_two"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="helpdesk@scopecinemas.com"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

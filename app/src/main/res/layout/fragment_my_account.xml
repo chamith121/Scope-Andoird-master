@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textAlignment="center"
+                android:textColor="@color/color_white"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/myLoyaltyPointBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_button_proceed"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="My Loyalty Points"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/editProfileBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_button_proceed"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="EDIT PROFILE"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/blue_color_semi_dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/btnUpPurchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@drawable/btn_button_my_account"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="center"
+                    android:text="MY PURCHASE HISTORY"
+                    android:textColor="@color/text_color_my_acc_one"
+                    android:textSize="12sp" />
+
+            <View
+                android:layout_below="@+id/btnUpPurchase"
+                android:id="@+id/viewPurHistory"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/transparent" />
+
+            <LinearLayout
+                android:layout_below="@+id/viewPurHistory"
+                android:id="@+id/listLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/msgTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/opensans_light"
+                    android:gravity="center"
+                    android:text="No data found."
+                    android:textColor="@color/color_white"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_viewPurchaseHis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:scrollbarSize="0dp"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

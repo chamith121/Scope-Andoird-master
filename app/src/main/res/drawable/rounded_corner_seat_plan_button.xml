@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android" >-->
+<!--    &lt;!&ndash;<stroke&ndash;&gt;-->
+<!--        &lt;!&ndash;android:width="1.5dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;android:color="@color/blue_color_dark_two" />&ndash;&gt;-->
+
+<!--    <solid android:color="#8890b5" />-->
+
+<!--    <padding-->
+<!--        android:left="1dp"-->
+<!--        android:right="1dp"-->
+<!--        android:bottom="1dp"-->
+<!--        android:top="1dp" />-->
+
+<!--    <corners android:radius="8dp" />-->
+<!--</shape>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true" >
+    <shape android:shape="rectangle"  >
+        <corners android:bottomRightRadius="5dp" android:bottomLeftRadius="5dp"
+            android:topLeftRadius="5dp" android:topRightRadius="5dp"/>
+        <stroke android:width="1dip" android:color="@color/blue_color_semi_dark" />
+        <gradient android:angle="-90" android:startColor="@color/blue_color_semi_dark" android:endColor="@color/blue_color_semi_dark"  />
+    </shape>
+</item>
+<item android:state_enabled="false">
+    <shape android:shape="rectangle"  >
+        <corners android:bottomRightRadius="5dp" android:bottomLeftRadius="5dp"
+            android:topLeftRadius="5dp" android:topRightRadius="5dp"/>
+        <stroke android:width="1dip" android:color="#8890b5" />
+        <solid android:color="#8890b5"/>
+    </shape>
+</item>
+<item >
+    <shape android:shape="rectangle"  >
+        <corners android:bottomRightRadius="5dp" android:bottomLeftRadius="5dp"
+            android:topLeftRadius="5dp" android:topRightRadius="5dp"/>
+        <stroke android:width="1dip" android:color="#8890b5" />
+        <gradient android:angle="-90" android:startColor="#8890b5" android:endColor="#8890b5" />
+    </shape>
+</item>
+
+</selector>

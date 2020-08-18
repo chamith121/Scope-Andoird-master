@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".PromosAndConfessionaies">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="56dp"
+                app:expandedTitleMarginStart="40dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="113dp"
+                            android:layout_height="190dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                app:cardBackgroundColor="#000000"
+                                app:cardCornerRadius="10dp">
+
+                                <ImageView
+                                    android:background="@drawable/ttb_no_image"
+                                    android:id="@+id/movieImageIV"
+                                    android:layout_width="113dp"
+                                    android:layout_height="160dp"
+                                    android:scaleType="centerCrop" />
+
+                            </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textViewTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="26dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/text_view_round"
+                                android:fontFamily="@font/opensans_semibold"
+                                android:gravity="center"
+                                android:text="0.00"
+                                android:textColor="@color/color_white"
+                                android:textSize="13sp" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/movieNameTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_bold"
+                                android:paddingLeft="7dp"
+                                android:textColor="@color/color_white"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:id="@+id/moveGenreTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_semibold"
+                                android:paddingLeft="7dp"
+                                android:text="Action"
+                                android:textColor="@color/text_color_nine"
+                                android:textSize="14sp" />
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/moveGenreTv"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/opensans_semibold"-->
+<!--                                    android:paddingLeft="7dp"-->
+<!--                                    android:text="Action"-->
+<!--                                    android:textColor="@color/text_color_nine"-->
+<!--                                    android:textSize="14sp" />-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/movieTimeTv"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/opensans_semibold"-->
+<!--                                    android:text="~ 2h 39m"-->
+<!--                                    android:textColor="@color/text_color_nine"-->
+<!--                                    android:textSize="14sp" />-->
+<!--                            </LinearLayout>-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:paddingLeft="7dp">
+
+                                <ImageView
+                                    android:layout_width="3dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image_blue" />
+
+                                <TextView
+                                    android:id="@+id/movieShowDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/opensans_semibold"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:paddingLeft="7dp">
+
+                                <ImageView
+                                    android:layout_width="3dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image_blue" />
+
+                                <TextView
+                                    android:id="@+id/movieVenue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/opensans_semibold"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:paddingLeft="7dp">
+
+                                <ImageView
+                                    android:layout_width="3dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image_blue" />
+
+                                <TextView
+                                    android:id="@+id/movieClass"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/opensans_semibold"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:paddingLeft="7dp">
+
+                                <ImageView
+                                    android:layout_width="3dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image_blue" />
+
+                                <TextView
+                                    android:id="@+id/seatsCountTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/opensans_semibold"
+                                    android:text="3 SEATS"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_below="@+id/youtube_player_view"
+                        android:background="@color/blue_color_semi_dark" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolBarPromosAndConfe"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_marginRight="65dp"
+                                android:fontFamily="@font/opensans_semibold"
+                                android:gravity="center_vertical"
+                                android:text="FOOD AND BEVERAGES"
+                                android:textColor="@color/color_white"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1f1f1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+            app:layout_collapseMode="pin">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/color_white" />
+
+                <LinearLayout
+                    android:id="@+id/tittleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/line2"
+                    android:background="@color/blue_color"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="FOOD AND BEVERAGE"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight=".2"
+                        android:src="@drawable/ic_expand_less_black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tittleLayout"
+                    android:background="@color/color_white"
+                    android:minHeight="800dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_background_one"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabIndicatorColor="@color/text_color_two"
+                            app:tabMode="scrollable"
+                            app:tabSelectedTextColor="@color/text_color_one"
+                            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                            app:tabTextColor="#595a6c" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginBottom="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/msgTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/opensans_light"
+                            android:gravity="center"
+                            android:text="No beverages data available."
+                            android:textColor="@color/color_white"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewConcession"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:scrollbars="vertical"
+                            android:scrollbarSize="0dp"/>
+
+                    </LinearLayout>
+
+<!--                    <android.support.v4.view.ViewPager-->
+<!--                        android:id="@+id/viewpager"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@color/color_white"-->
+<!--                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_color_transparant"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_button_proceed"
+            android:fontFamily="@font/opensans_bold"
+            android:text="CONTINUE"
+            android:textColor="@color/color_white"
+            android:textSize="15sp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

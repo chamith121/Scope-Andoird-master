@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_Bg_color"
+    android:fitsSystemWindows="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/login_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/login_Bg_color"
+            tools:context="lk.archmage.scopecinemas.Login">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="48dp"
+                android:src="@drawable/scope_cinemas_logo"
+                app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:backgroundTint="@color/line_color_three"
+                android:fontFamily="@font/opensans_regular"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/line_color_three"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtPassword" />
+
+            <TextView
+                android:id="@+id/emailMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/line_color_four"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/line_color_three"
+                android:fontFamily="@font/opensans_regular"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/line_color_three"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/forgotBtn" />
+
+
+            <TextView
+                android:id="@+id/passwordMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text=""
+                android:textColor="@color/line_color_four"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+
+            <TextView
+                android:id="@+id/forgotBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/opensans_regular"
+                android:padding="15dp"
+                android:text="Forgot Password ?"
+                android:textAlignment="center"
+                android:textColor="@color/color_white"
+                app:layout_constraintBottom_toTopOf="@+id/loginBtn" />
+
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/login_btn_bg"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Login"
+                android:textColor="@color/color_white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/fbLoginBtn"
+                tools:layout_editor_absoluteX="94dp" />
+
+
+            <Button
+                android:id="@+id/fbLoginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+
+                android:background="@drawable/login_btn_fb_bg"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Login with facebook"
+                android:textColor="@color/color_white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                tools:layout_editor_absoluteX="94dp" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center_vertical"
+                    android:text="Don't you have an Account ? "
+                    android:textColor="@color/color_white" />
+
+                <TextView
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center_vertical"
+                    android:text="REGISTER"
+                    android:textColor="@color/color_white" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+
+
+

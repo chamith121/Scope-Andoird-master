@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "983196639848",
+    "firebase_url": "https://scope-cinemas-47f24.firebaseio.com",
+    "project_id": "scope-cinemas-47f24",
+    "storage_bucket": "scope-cinemas-47f24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983196639848:android:6cfc7736b85e2a0acad1dd",
+        "android_client_info": {
+          "package_name": "cinema.com.scope"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983196639848-issq77fjdbjvud7pjja4okr14tuj0012.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cinema.com.scope",
+            "certificate_hash": "ffee33b030771d4856f87e72118123e99529a394"
+          }
+        },
+        {
+          "client_id": "983196639848-pifir3umpnfrdpvv0holb61q1mbge9rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlcWFJODFxKgER1RAicqWscH143UWRYPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983196639848-pifir3umpnfrdpvv0holb61q1mbge9rg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "983196639848-44k4voni9cn9qujadeflfcfcss492qls.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.layoutindex.scopecinema"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983196639848:android:35d495c5e578c969cad1dd",
+        "android_client_info": {
+          "package_name": "lk.archmage.scopecinemas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983196639848-qap437bi5m6om3l5ht1841ppseq9hnfi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lk.archmage.scopecinemas",
+            "certificate_hash": "ffee33b030771d4856f87e72118123e99529a394"
+          }
+        },
+        {
+          "client_id": "983196639848-pifir3umpnfrdpvv0holb61q1mbge9rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlcWFJODFxKgER1RAicqWscH143UWRYPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983196639848-pifir3umpnfrdpvv0holb61q1mbge9rg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "983196639848-44k4voni9cn9qujadeflfcfcss492qls.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.layoutindex.scopecinema"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/offerImageIV"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@drawable/ttb_no_image_two" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/offerImageTwoIV"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="62dp"
+                    android:layout_height="35dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ttb_no_image" />
+
+                <TextView
+                    android:id="@+id/titleTV"
+                    android:layout_below="@+id/offerImageTwoIV"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Movie Tickets with HSBC Rewards!"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/subTitleTV"
+                    android:layout_below="@+id/titleTV"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Movie Tickets with HSBC Rewards!"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="10sp"/>
+
+                <Button
+                    android:id="@+id/btnMoreInfo"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="MORE INFO"
+                    android:textColor="@color/color_white"
+                    android:background="@drawable/btn_button_proceed"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

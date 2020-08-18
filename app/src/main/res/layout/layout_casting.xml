@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/castNameTv"
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_eight"
+        android:fontFamily="@font/opensans_regular"
+        android:textSize="14sp"
+        android:gravity="center|left"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight=".1"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="@color/text_color_eight"
+        android:fontFamily="@font/opensans_semibold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/acterNameTv"
+        android:gravity="center|left"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_eight"
+        android:fontFamily="@font/opensans_regular"
+        android:textSize="14sp"/>
+
+
+</LinearLayout>

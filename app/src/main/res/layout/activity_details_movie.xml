@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsMovie">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBarDetails"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="65dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="DETAILS"
+                        android:textColor="@color/color_white"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageMain"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/ic_search"-->
+<!--                    android:visibility="visible" />-->
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="0dp"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/semi_white_background">
+
+                <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+                    android:id="@+id/youtube_player_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:layout_below="@+id/youtube_player_view"
+                    android:background="@color/blue_color_semi_dark" />
+
+                <LinearLayout
+                    android:id="@+id/detailsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/movieNameTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/opensans_bold"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/text_color_one"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/moveGenreTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/opensans_semibold"
+                            android:paddingLeft="7dp"
+                            android:text="Action"
+                            android:textColor="@color/text_color_two"
+                            android:textSize="12sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_regular"
+                                android:paddingLeft="7dp"
+                                android:text="IMDB"
+                                android:textColor="@color/text_color_three"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp">
+
+                                <RatingBar
+                                    android:id="@+id/rating"
+                                    style="?android:attr/ratingBarStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="1"
+                                    android:stepSize="1"
+                                    android:theme="@style/RatingBar1" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/ratingTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textColor="@color/text_color_three"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="115dp"
+                    android:layout_height="158dp"
+                    android:layout_above="@+id/tablayout"
+                    android:layout_marginLeft="11dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="#000000"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:background="@drawable/ttb_no_image_two"
+                            android:id="@+id/movieImageIV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_below="@+id/detailsLayout"
+                    android:background="@color/color_white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/semi_white_background"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            app:tabGravity="fill"
+                            app:tabIndicatorColor="@color/tab_indicater_color"
+                            app:tabMode="scrollable"
+                            app:tabSelectedTextColor="@color/text_color_three"
+                            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                            app:tabTextColor="@color/text_color_two" />
+
+                    </LinearLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_white"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/buyTicketsBtn"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/opensans_bold"
+                android:background="@drawable/btn_button_proceed"
+                android:text="Buy Tickets"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

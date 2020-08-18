@@ -1,0 +1,65 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- layout_food_beverages Layout dimentions -->
+
+    <dimen name="item_name__lay_layout_marginTop">10dp</dimen>
+    <dimen name="item_name_lay_layout_marginBottom">4dp</dimen>
+    <dimen name="item_name_tv_paddingLeft">8dp</dimen>
+
+    <dimen name="item_name_view_height">1dp</dimen>
+    <dimen name="item_name_view_layout_marginLeft">11dp</dimen>
+    <dimen name="item_name_view_layout_marginRight">7dp</dimen>
+    <dimen name="itemNameTv_textSize">13sp</dimen>
+
+    <dimen name="layout_main_layout_marginTop">5dp</dimen>
+    <dimen name="layout_main_layout_marginBottom">5dp</dimen>
+
+    <dimen name="imageItem_width">85dp</dimen>
+    <dimen name="imageItem_height">95dp</dimen>
+    <dimen name="imageItem_padding">7dp</dimen>
+
+    <dimen name="descrip_layout_marginLeft">10dp</dimen>
+    <dimen name="descrip_layout_marginRight">5dp</dimen>
+
+    <dimen name="itemNameTwoTv_textSize">9sp</dimen>
+    <dimen name="itemNameTwoTv_marginLeft">6dp</dimen>
+    <dimen name="itemNameTwoTv_marginTop">6dp</dimen>
+
+    <dimen name="priceTv_textSize">8sp</dimen>
+    <dimen name="priceTv_marginLeft">6dp</dimen>
+    <dimen name="priceTv_marginBottom">8dp</dimen>
+
+    <dimen name="relative_lay_marginTop">8dp</dimen>
+
+    <dimen name="linearLayout_layout_width">110dp</dimen>
+
+    <dimen name="minusButton_textSize">20sp</dimen>
+    <dimen name="minusButton_width">32dp</dimen>
+    <dimen name="minusButton_height">32dp</dimen>
+
+    <dimen name="qty_layout_textSize">10sp</dimen>
+    <dimen name="qty_layout_marginLeft">10dp</dimen>
+    <dimen name="qty_llayout_marginRight">10dp</dimen>
+
+    <dimen name="countQuantityTv_textSize">10sp</dimen>
+    <dimen name="countQuantityTv_marginLeft">10dp</dimen>
+    <dimen name="countQuantityTv_marginRight">10dp</dimen>
+
+    <dimen name="plusButton_textSize">20sp</dimen>
+    <dimen name="plusButton_width">32dp</dimen>
+    <dimen name="plusButton_height">32dp</dimen>
+
+    <dimen name="addBtn_textSize">14sp</dimen>
+    <dimen name="addBtn_layout_marginRight">5dp</dimen>
+    <dimen name="addBtn_width">70dp</dimen>
+    <dimen name="addBtn_height">32dp</dimen>
+
+
+</resources>

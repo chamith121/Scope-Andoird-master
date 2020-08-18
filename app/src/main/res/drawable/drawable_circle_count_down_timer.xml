@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadiusRatio="3.6"
+    android:shape="ring"
+    android:thickness="6dp"
+    android:useLevel="true">
+
+    <solid android:color="@color/blue_color_dark_two" />
+
+</shape>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:innerRadiusRatio="3.6"-->
+    <!--android:shape="ring"-->
+    <!--android:thickness="6dp"-->
+    <!--android:useLevel="true">-->
+
+    <!--<solid android:color="@color/textColor4" />-->
+<!--</shape>-->

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="113dp"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:background="@drawable/ttb_no_image_two"
+                        android:id="@+id/movieImageIV"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:scaleType="centerCrop"/>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/movieNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_one"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="20sp"
+                    android:paddingLeft="7dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/moveGenreTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Action"
+                        android:textColor="@color/text_color_two"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:textSize="13sp"
+                        android:paddingLeft="7dp"/>
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/movieTimeTv"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="~ 2h 39m"-->
+<!--                        android:textColor="@color/text_color_two"-->
+<!--                        android:fontFamily="@font/opensans_semibold"-->
+<!--                        android:textSize="13sp" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMDB"
+                        android:textColor="@color/text_color_three"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textSize="18sp"
+                        android:paddingLeft="7dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center_vertical">
+
+                        <RatingBar
+                            android:id="@+id/rating"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="1"
+                            android:stepSize="1"
+                            android:theme="@style/RatingBar1" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ratingTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_three"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/buyTicketsBtn"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:text="Buy Tickets"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_white"
+                    android:background="@drawable/btn_button_proceed"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

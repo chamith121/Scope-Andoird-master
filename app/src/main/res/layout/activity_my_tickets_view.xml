@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="lk.archmage.scopecinemas.MyTicketsView">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBarMyTickets"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="0dp"
+                android:orientation="horizontal">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/backArrowIv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:paddingLeft="2dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/black_arrow" />-->
+
+                <TextView
+                    android:paddingRight="70dp"
+                    android:id="@+id/mainName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="center"
+                    android:text="Ticket"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_white"
+                    android:textSize="18sp" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/syncIv"-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:background="#00FFFFFF"-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:paddingTop="10dp"-->
+<!--                    android:paddingRight="10dp"-->
+<!--                    android:paddingBottom="10dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/sync" />-->
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/imagelayout"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="15dp">
+
+                    <ImageView
+                        android:id="@+id/thumbnailMovieMt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ttb_no_image_two"
+                        android:clickable="true"
+                        android:scaleType="fitXY" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/qrCodeImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="25dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/QR_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ticketDetailsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qrCodeImage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/transparent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F8FFFFFF"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/theaterNameTvMt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textColor="#7a7977"
+                        android:textSize="14sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/movieNameTvMt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="5dp"
+                                    android:text="Rush Sinhala"
+                                    android:textColor="#45484d"
+                                    android:textSize="18sp"
+                                    android:paddingTop="10dp"
+                                    android:layout_gravity="start"/>
+
+
+                                <TextView
+                                    android:id="@+id/ticketsCountTv"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".4"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:gravity="center"
+                                    android:paddingRight="2dp"
+                                    android:text="5"
+                                    android:textColor="#45494c"
+                                    android:textSize="50sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/opensans_light"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="20dp"
+                                        android:paddingRight="20dp"
+                                        android:text="Date &amp; Time"
+                                        android:textColor="#aeafb1"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".4"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/opensans_light"
+                                        android:gravity="center"
+                                        android:text="Ticket(s)"
+                                        android:textColor="#aeafb1"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/movieDateTvMt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:paddingLeft="20dp"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#45494c"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/movieShowTimeTvMt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:paddingLeft="20dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="10dp"
+                                    android:textColor="#45494c"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/opensans_light"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Seat"
+                        android:textColor="#aeafb1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/seatNumbersTvMt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="20dp"
+                        android:textColor="#44474c"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textProTv"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/opensans_light"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="F&amp;B Items and Quantity"
+                        android:textColor="#aeafb1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/productTvMt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="20dp"
+                        android:textColor="#44474c"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/divider_3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/layout_bg_transparant_one"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:fontFamily="@font/opensans_light"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="Ticket No."
+                            android:textColor="#aeafb1"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/opensans_light"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="Price"
+                            android:textColor="#aeafb1"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txidTvMt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1.2"
+                            android:fontFamily="@font/opensans_regular"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:textColor="#45494c"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/totalTvMt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/opensans_regular"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20dp"
+                            android:textColor="#45494c"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
